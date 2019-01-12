@@ -23,6 +23,7 @@ Option: Generer les noms des supliers automatiquement
 
 # Import modules
 import pandas as pd
+import os
 
 # Todo: Modifier en fonction
 # Todo: Faire une interface graphique
@@ -32,7 +33,8 @@ import pandas as pd
 
 # File path du fichier
 # Todo: Inclure un file path
-fp = 'C:\Eclipse\KiCad_BoM_Eclipse\\Project_Template_bom.csv'
+from os import path
+fp = path.relpath("bom.csv")
 
 
 # Lit le Bom genere par KiBom
